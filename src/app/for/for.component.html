@@ -1,0 +1,26 @@
+<p>
+  for works!
+</p>
+<ul>
+  <li *ngFor="let formation of formations">
+    {{ formation.name }}
+  </li>
+</ul>
+
+<ul>
+  <li *ngFor="let formation of formations; index as i">
+    {{i}} - {{ formation.name }}
+  </li>
+</ul>
+<!--premier element en rouge-->
+<ul>
+  <li *ngFor="let formation of formations; index as i; first as f">
+    <p [style.color]="getColorByElement(f)">{{i}} - {{ formation.name }}</p>
+  </li>
+</ul>
+<!--l'exercice du tp-->
+<ul>
+  <li *ngFor="let formation of formations; index as i; first as f; last as l; even as e">
+    <p [style.color]="getColorByElement2(f,l,e)" [style.background-color]="getBckg(e)">{{i}} - {{ formation.name }}</p>
+  </li>
+</ul>

@@ -1,0 +1,12 @@
+<p [style.color]="'red'">Formation angular</p>
+<p [style.color]="'red'" [style.background]="'blue'">Formation angular</p>
+<p [ngStyle]="{color: 'red', background: 'blue'}">Formation angular</p>
+<p [class.sapin]="true" [class.sapin-italic]="true">Formation angular</p>
+<p [ngClass]="{'sapin': true, 'sapin-italic': true}">Formation angular</p>
+
+
+<ul>
+  <li *ngFor="let formation of formations; index as i; last as l; first as f; even as e">
+   <p [ngClass] = "{'even' : e, 'first':f, 'last':l}">{{i}} - {{ formation.name }}</p>
+  </li>
+</ul>

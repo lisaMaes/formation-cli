@@ -1,0 +1,26 @@
+<button (click)="handleClick()">Console log</button>
+<button (click)="handleClick2()">{{pouet}}</button>
+
+<p (mouseover)="mouseOver()" (mouseout)="mouseOut()"  [hidden]="isHidden">Pour construire une application Angular, il faut saisir quelques trucs sur la philosophie du framework. Avant
+  tout, Angular est un framework orienté composant. Vous allez écrire de petits composants, et assemblés, ils
+  vont constituer une application complète. Un composant est un groupe d’éléments HTML, dans un template,
+  dédiés à une tâche particulière. Pour cela, vous aurez probablement besoin d’un peu de logique métier
+  derrière ce template, pour peupler les données, et réagir aux événements par exemple. Pour les vétérans
+  d’AngularJS 1.x, c’est un peu comme le fameux duo "template / controlleur", ou une directive.
+  Il faut aussi dire qu’un standard a été défini autour de ces composants : le standard Web Component
+  ("composant web"). Même s’il n’est pas encore complètement supporté dans les navigateurs, vous pouvez
+  déjà construire des petits composants isolés, réutilisables dans différentes applications (ce vieux rêve de
+  programmeur). Cette orientation composant est largement partagée par de nombreux frameworks front-end :
+  c’est le cas depuis le début de ReactJS, le framework tendance de Facebook ; EmberJS et AngularJS ont leur
+  propre façon de faire quelque chose de similaire ; et les petits nouveaux Aurelia ou Vue.js parient aussi sur la
+  construction de petits composants.
+  Angular n’est donc pas le seul sur le sujet, mais il est parmi les premiers (ou le premier ?) à considérer
+  sérieusement l’intégration des Web Components (ceux du standard officiel). Mais écartons ce sujet, trop
+  avancé pour le moment. Vos composants seront organisés de façon hiérarchique, comme le DOM : un
+  composant racine aura des composants enfants, qui auront chacun des composants enfants, etc.
+  L’équipe Angular voulait aussi bénéficier d’une autre pépite du développement web moderne : ES6. Ainsi vous
+  pouvez écrire tes composants en ES5 (pas cool !) ou en ES6 (super cool !). Mais cela ne leur suffisait pas, ils
+  voulaient utiliser une fonctionnalité qui n’est pas encore standard : les décorateurs. Alors ils ont travaillé
+  étroitement avec les équipes de transpileurs (Traceur et Babel) et l’équipe Microsoft du projet TypeScript, pour
+  nous permettre d’utiliser des décorateurs dans nos applications Angular. Quelques décorateurs sont
+  disponibles, permettant de déclarer facilement un composant et sa vue.</p>

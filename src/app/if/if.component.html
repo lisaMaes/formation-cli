@@ -1,0 +1,15 @@
+<p>
+  if works!
+</p>
+
+<button (click)="handleClick()">Lire Plus</button>
+<div *ngIf="isDisplay2; else titleForm"><p>{{formation.name}}</p></div>
+<ng-template #titleForm><p>{{formation.description}}</p></ng-template>
+
+<div *ngIf="isDisplay"><p>Formation Angular</p></div>
+
+<div *ngIf="isDisplay; else title"><p>Formation Angular</p></div>
+<ng-template #title><p>Nom de la formation</p></ng-template>
+
+
+
