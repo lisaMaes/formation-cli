@@ -11,8 +11,8 @@
 </ul>
 <ul>
   <li *ngFor="let formation of formations; index as i">
-    {{ formation.name | titlecase}} : {{formation?.price |currency:'EUR'}}
-   <div *ngIf="isDisplay()">du {{formation?.dateDeb | date:'dd/MM/yyyy'}}</div>
-  <div *ngIf="isDisplay2">au {{formation?.dateFin | date:'dd/MM/yyyy'}}</div>
+    {{ formation.name | titlecase}} <span *ngIf="formation.price !== undefined? true:false">: {{formation.price |currency:'EUR'}}</span>
+   <div *ngIf="formation.dateDeb !== undefined">du {{formation.dateDeb | date:'dd/MM/yyyy'}}</div>
+  <div *ngIf="formation.dateFin !== undefined">au {{formation.dateFin | date:'dd/MM/yyyy'}}</div>
   </li>
 </ul>

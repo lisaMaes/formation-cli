@@ -1,0 +1,5 @@
+<div>
+  <h4  (click)="selectClick2()">{{ formation?.name | titlecase}} <span *ngIf="formation.price !== undefined">: {{formation?.price |currency:'EUR'}}</span></h4>
+  <div (click)="selectFormation()" *ngIf="formation?.dateDeb !== undefined">du {{formation?.dateDeb | date:'dd/MM/yyyy'}}</div>
+  <div *ngIf="formation?.dateFin !== undefined">au {{formation?.dateFin | date:'dd/MM/yyyy'}}</div>
+</div>

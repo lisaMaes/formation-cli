@@ -15,6 +15,9 @@ import { ForComponent } from './for/for.component';
 import { SwitchComponent } from './switch/switch.component';
 import { NgstyleComponent } from './ngstyle/ngstyle.component';
 import { PipeComponent } from './pipe/pipe.component';
+import { FormationItemComponent } from './formation-item/formation-item.component';
+import { PlaygroundComponent } from './playground/playground.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +34,9 @@ import { PipeComponent } from './pipe/pipe.component';
     SwitchComponent,
     NgstyleComponent,
     PipeComponent,
+    FormationItemComponent,
+    PlaygroundComponent,
+    LifecycleComponent,
   ],
   imports: [
     BrowserModule,

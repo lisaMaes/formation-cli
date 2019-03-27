@@ -1,0 +1,9 @@
+<ul>
+<li *ngFor="let formation of formations">
+  <app-formation-item [formation]="formation"
+                      (formationSelected)="handleFormationSelected($event)"
+                      (formationClicked2)="handleFormationClicked2($event)">
+
+  </app-formation-item>
+</li>
+</ul>

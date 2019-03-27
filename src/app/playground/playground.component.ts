@@ -2,22 +2,22 @@ import { Component, OnInit } from '@angular/core';
 import {Formation} from "../model/Formation";
 
 @Component({
-  selector: 'app-pipe',
-  templateUrl: './pipe.component.html',
-  styleUrls: ['./pipe.component.css']
+  selector: 'app-playground',
+  templateUrl: './playground.component.html',
+  styleUrls: ['./playground.component.css']
 })
-export class PipeComponent implements OnInit {
+export class PlaygroundComponent implements OnInit {
 
   formations:Array<Formation> = [];
 
+  handleFormationSelected(formation) {
 
-  asyncPromise: any = new Promise(resolve => {
-    setTimeout(() => resolve('Async data'), 1500);
-  });
+    console.log('Formation selected', formation);
+  }
 
-  keyValueObj : {key1 : string, key2 : string} = {
-    key1 : 'Value 1',
-    key2 : 'Value 2',
+
+  handleFormationClicked2(formation) {
+      alert(formation.name);
   }
 
   constructor() { }
